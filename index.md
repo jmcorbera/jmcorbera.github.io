@@ -1,6 +1,15 @@
 # Portfolio
 ---
 
+## <b> SOA </b>
+
+## Service Oriented Architecture
+
+SOA (Service Oriented architecture) It is a service-oriented architecture paradigm. Defines a way to make software components reusable and interoperable via service interfaces.
+The services are exposed using standard network protocols — such as SOAP (simple object access protocol)/HTTP or Restful HTTP (JSON/HTTP) — to send requests to read or change data.
+
+---
+
 ## <b>.Net 5 </b>
 
 ## Implementing API Rest
