@@ -5,8 +5,17 @@
 
 ## Service Oriented Architecture
 
-SOA (Service Oriented architecture) It is a service-oriented architecture paradigm. Defines a way to make software components reusable and interoperable via service interfaces.
-The services are exposed using standard network protocols — such as SOAP (simple object access protocol)/HTTP or Restful HTTP (JSON/HTTP) — to send requests to read or change data.
+SOA (Service Oriented Architecture) It is a service oriented architecture paradigm. It defines a way to make software components reusable and interoperable through service interfaces.
+SOA represents an important stage in the evolution and integration of applications.
+Each service in an SOA embeds the code and data necessary to execute a complete business logic function. Service interfaces provide loose coupling, without the need to know how they are implemented underneath, reducing dependencies between applications.
+This "interface" is a service contract between the service provider and the service consumer. Applications behind the service interface can be written in Java, Microsoft .Net, Cobol, or any other programming language.
+Services are exposed using standard network protocols, such as Simple Object Access Protocol (SOAP)/HTTP or Restful HTTP (JSON/HTTP), to send requests to read or change data.</br>
+### SOAP (Simple Object Access Protocol)
+SOAP services generally work through the HTTP protocol, which is the most common when we invoke a Web Service, however, SOAP is not limited to this protocol, but can be sent by FTP, POP3, TCP, Messaging Queues (JMS , MQ, etc) .
+SOAP only supports XML format.</br>
+### REST (REpresentational State Transfer)
+REST is a much more flexible technology that transports data through the HTTP protocol, this allows you to use the various methods that HTTP provides to communicate, such as GET, POST, PUT, DELETE, PATCH and, at the same time, uses the response codes HTTP natives (404,200,204,409).
+REST supports XML, JSON, Binaries (images, documents), Text, etc. (the advantage of using JSON is that it is interpreted naturally by JavaScript)</br>
 
 ---
 
