@@ -109,7 +109,7 @@ catch (Exception ex) // Handling all other exceptions
 <b>try catch blocks chain</b> - <i><b>go from the most specific exception to the most general</i></b>.
 When an exception occurs inside the try block, CLR first checks it against the first catch block; if it fits, that catch block is executed. If the first catch block doesn't match, it checks the second catch block, then the third, and so on, ending with the last catch block. 
 
-How would I know which exceptions the code throws? the answer is... <b>Documentation</b>. e.g. for <b>int.Parse</b> You can find it [here](https://docs.microsoft.com/en-us/dotnet/api/system.int32.parse?view=netframework-4.7.2)
+How would I know which exceptions the code throws? the answer is... <b>Documentation</b>. e.g. for <b>int.Parse</b> You can find it [here](https://docs.microsoft.com/en-us/dotnet/api/system.int32.parse?view=netframework-4.7.2?target=_blank)
 
 
 ### try catch hierarchy function
