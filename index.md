@@ -25,12 +25,14 @@ REST supports XML, JSON, Binaries (images, documents), Text, etc. (the advantage
 
 With this implementation, the aim is to generate a structural model for a API REST application using .NET 5. For this, a layered architecture is created and the Repository Pattern is used.
 
-<br><img src="images/APIRestArchitecture.png?raw=true"/><br>
+<img src="images/APIRestArchitecture.png?raw=true"/>
 
 <i>All the source codes of this implementation can be found in the GitHub repository.</i>
 
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/jmcorbera/ApiRestNetCore.git)<br> <br>
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/jmcorbera/ApiRestNetCore.git)
+
 ---
+
 ## <b>.Net Framework</b> 
 
 ## Implementing WCF SOAP Service
@@ -170,6 +172,8 @@ finally
 }
 // Do something with nextCharacter
 ```
+
+---
 
 <!-- 
 
