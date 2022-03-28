@@ -127,6 +127,13 @@ public static void SomeMethod() // The exception "jumps out" from here
     throw new ArgumentException("Argument is wrong!");
 }
 ```
+In the code written above, when we call SomeMethod() function, the program could terminate because of an unhandled exception if we don´t handle the exception call,  by adding a try - catch block in the Main function, we fix this problem..
+
+When an exception occurs, it looks for the closest try - catch block to the line where the exception occurred. If there is no try - catch nearby, it 'jumps out' from the function and looks for the try - catch in the function that called the current one, and so on, until it gets to the highest in the hierarchy function ( Main ), and if that one doesn't have a try-catch for this exception, your program will crash 
+
+We'll illustrate How it´s work.
+
+<br><img src="images/try_catch_hierarchy_function.png?raw=true"/><br>
 
 <!-- 
 
