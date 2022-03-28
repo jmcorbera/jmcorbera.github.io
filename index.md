@@ -51,9 +51,12 @@ Here we are going to show a basic architecture implementation of a service SOAP 
 
 Exceptions allow an application to transfer control from one part of the code to another. When an exception is thrown, the current flow of the code is interrupted and handed back to a parent try catch block. C# exception handling is done with the follow keywords:
 
-<b>try</b> – A try block is used to encapsulate a region of code. If any code throws an exception within that try block, the exception will be handled by the corresponding catch.</br>
-<b>catch</b> – When an exception occurs, the catch block of code is executed. This is where you are able to handle the exception, log it, or ignore it.</br>
-<b>finally</b> – The finally block allows you to execute certain code if an exception is thrown or not.</br>
+<b>try</b> – A try block is used to encapsulate a region of code. If any code throws an exception within that try block, the exception will be handled by the corresponding catch.
+
+<b>catch</b> – When an exception occurs, the catch block of code is executed. This is where you are able to handle the exception, log it, or ignore it.
+
+<b>finally</b> – The finally block allows you to execute certain code if an exception is thrown or not.
+
 <b>throw</b> – The throw keyword is used to actually create a new exception that is the bubbled up to a try catch finally block. 
 
 ```
@@ -68,7 +71,7 @@ public code GetLengthRatio(string s1, string s2)
 ```
 The code written above can throw at least 2 different exceptions: *`NullReferenceException`* and *`DivideByZeroException`*
 
-## Write code that handles exceptions
+### Write code that handles exceptions
 
 ```
 public code GetLengthRatio(string s1, string s2)
@@ -101,13 +104,13 @@ catch (Exception ex) // Handling all other exceptions
 }
 ```
 
-<b>try catch blocks chain</b> - <i><b>go from the most specific exception to the most general</i></b>.</br> 
+<b>try catch blocks chain</b> - <i><b>go from the most specific exception to the most general</i></b>.
 When an exception occurs inside the try block, CLR first checks it against the first catch block; if it fits, that catch block is executed. If the first catch block doesn't match, it checks the second catch block, then the third, and so on, ending with the last catch block. 
 
 How would I know which exceptions the code throws? the answer is... <b>Documentation</b>. e.g. for <b>int.Parse</b> You can find it [here](https://docs.microsoft.com/en-us/dotnet/api/system.int32.parse?view=netframework-4.7.2)
 
 
-## try catch hierarchy function
+### try catch hierarchy function
 
 ```
 public static void Main()
