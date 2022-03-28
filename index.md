@@ -138,13 +138,43 @@ We'll illustrate How it´s work.
 
 <br><img src="images/try_catch_hierarchy_function.png?raw=true"/><br>
 
+### Third block called finally
+
+When we create an object of our class or create an int variable, all the resources for those are going to be managed by C#, or more precisely, CLR ( Common Language Runtime ). But if you start working with a world outside of your application; for example, files on a hard disk drive; then CLR will not help in clearing all the resources, and you need to call special functions to do this.
+
+A try , catch construction has a third block, called finally . It's used to clean up any resources that were allocated in the try block. It can be used without a catch block ( try - finally ), or with it ( try - catch - finally ). 
+
+The code in finally (almost) always executes. That's why the finally block is used for deallocation of the system resources.
+
+```
+System.IO.StreamReader fileReader = new System.IO.StreamReader("anyFile.txt");
+
+int nextCharacter;
+try
+{
+    // Trying to read from file
+    nextCharacter = fileReader.Read();
+}
+catch (System.IO.IOException e)
+{
+    // Handle an IOException error
+    Console.WriteLine(string.Format("Error reading from anyFile.txt - Exception : {0}", ex.Message));
+}
+finally
+{
+    if (fileReader != null)
+    {
+        // Close the file! Cleans up resources in operating system.
+        fileReader.Close();
+    }
+}
+// Do something with nextCharacter
+```
+
 <!-- 
 
--- item 3 - Third block called finally
+-- item 4 - C# Custom Exception Types
 
--- itme 4 - C# Custom Exception Types
-
--- C# Exception Logging Best Practices -->
-
+-- item 5 - C# Exception Logging Best Practices -->
 
 <!-- Remove above link if you don't want to attibute -->
